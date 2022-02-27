@@ -7,9 +7,11 @@ const {
     deleteThought
 } = require('../../controllers/thoughtsCon');
 
+// api/thoughts/userThoughts
+router.route('/userThoughts').get(getThought).post(newThought);
 
-router.route('/').get(getThought).post(newThought);
 
+// api/thoughts/:thoughtId
 router
 .route('/:thoughtId')
 .get(oneThought)

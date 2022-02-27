@@ -5,10 +5,11 @@ const {
     newUser
 
 } = require('../../controllers/usersCon');
-// const { route } = require('./thoughtRoute');
 
+// api/users
 router.route('/').get(getUsers).post(newUser);
 
+// api/users/:userId
 router.route('/:userId').get(oneUser);
 
 module.exports = router;
