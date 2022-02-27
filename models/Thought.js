@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const thoughtSchema = new Schema(
     {
-        thoughText: {
+        thoughtText: {
             type: String,
             required: true,
             maxlength: 280,
@@ -16,9 +16,9 @@ const thoughtSchema = new Schema(
             type: String,
             required: true,
         },
-        reactions: {
+        // reactions: {
 
-        },
+        // },
     },
     {
         toJSON: {
